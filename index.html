@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <h2 class="logo">Ganesh</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1 class="reveal">Hi, I'm <span>Ganesh</span></h1>
+  <p class="tagline">Python,SQL Developer & UI/UX Designer</p>
+  <a href="C:\Users\GANESH\OneDrive\Desktop\portfolio\resume\GANESH_FINAL_RESUMEEEE.pdf" download class="resume-btn">Download Resume</a>
+
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I am a B.Tech student passionate about Python, SQL, and UI/UX design.</p>
+  <div class="facts">
+    <div>🎓 B.Tech Student</div>
+    <div>🌐 Languages: English, Telugu</div>
+    <div>🎨 Interests: Design, Web</div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>My Gallery</h2>
+  <div class="images">
+    <img src="https://picsum.photos/300/200?1" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/300/200?2" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/300/200?3" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/300/200?4" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">Python</div>
+    <div class="skill-box">SQL</div>
+    <div class="skill-box">Figma</div>
+    <div class="skill-box">Java</div>
+    <div class="skill-box">UI/UX Design</div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: ganeshgannu94@email.com</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
