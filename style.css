@@ -143,3 +143,50 @@ button {
   background: black;
   color: white;
 }
+.gallery {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;                 /* space between cards */
+  justify-items: center;
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;   /* name below image */
+  align-items: center;
+  background: #f5f5ff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.img-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-card img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
+}
+
+.img-card p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
